@@ -3,6 +3,7 @@ package br.senai.sp.calculadoraPoligonos.dao;
 import java.util.Scanner;
 
 import br.senai.sp.calculadoraPoligonos.model.Trapezio;
+import br.senai.sp.calculadoraPoligonos.ui.Menu;
 
 
 public class TrapezioDao {
@@ -13,7 +14,7 @@ public class TrapezioDao {
 		System.out.println("Criando um trapézio  ");
 		Trapezio trapezio1 = new Trapezio();
 		
-		System.out.println("Digite a medida da base maior do trapézio: ");
+		System.out.print("Digite a medida da base maior do trapézio: ");
 		trapezio1.setBaseMaior(leitor.nextDouble());
 		
 		System.out.print("Digite a medida da base menor do trapézio: ");
@@ -23,7 +24,9 @@ public class TrapezioDao {
 		trapezio1.setAltura(leitor.nextDouble());
 		
 		trapezio1.exibirDados();
+		
 
+		Menu.retornar();
 
 		
 	}

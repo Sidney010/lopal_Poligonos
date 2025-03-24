@@ -10,10 +10,10 @@ import br.senai.sp.calculadoraPoligonos.dao.TrianguloDao;
 
 public class Menu{
 	
-	public static void criarMenu() {
-		Scanner leitor = new Scanner(System.in);
-		
+	static Scanner leitor = new Scanner(System.in);
 	
+	public static void criarMenu() {
+
 		System.out.println("--------------------------");
 		System.out.println("Calculo de Polígonos:");
 		System.out.println("--------------------------");
@@ -22,8 +22,9 @@ public class Menu{
 		System.out.println("3 - Triângulo");
 		System.out.println("4 - Trapézio");
 		System.out.println("5 - Circurência");
+		System.out.println("6 - Sair");
 		System.out.println("--------------------------");
-		System.out.print("Escolha uma opção de (1-5): ");	
+		System.out.print("Escolha uma opção de (1 - 6): ");	
 		
 		int opcao = leitor.nextInt();
 		
@@ -42,10 +43,23 @@ public class Menu{
 		} else if (opcao == 5) {
 			CircuferenciaDao.criar();
 			
+		} else if (opcao == 6){
+			System.out.println("Encerrando o programa. Volte sempre!");
+			System.exit(0);
 		} else {
-			System.out.println("Opção inválida! Você deve escolher um número entre 1 e 5!");
+			System.out.println("Opção inválida! Você deve escolher um número entre 1 e 6!");
+			criarMenu();
 		}
+		
+		
+	}
 
+	public static void retornar() {
+		// TODO Auto-generated method stub
+		//Perguntar ao usuário
+		System.out.println("Digite qualquer tela e precione ENTER para continuar...");
+		leitor.next();
+		criarMenu();
 		
 	}
 }

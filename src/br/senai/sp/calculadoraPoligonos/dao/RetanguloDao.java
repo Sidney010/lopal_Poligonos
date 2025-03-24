@@ -3,6 +3,7 @@ package br.senai.sp.calculadoraPoligonos.dao;
 import java.util.Scanner;
 
 import br.senai.sp.calculadoraPoligonos.model.Retangulo;
+import br.senai.sp.calculadoraPoligonos.ui.Menu;
 
 public class RetanguloDao {
 	
@@ -21,7 +22,10 @@ public class RetanguloDao {
 		retangulo1.setAltura(leitor.nextDouble());
 		
 		retangulo1.exibirDados();
-		
+
+
+		Menu.retornar();
+
 	}
 	
 }

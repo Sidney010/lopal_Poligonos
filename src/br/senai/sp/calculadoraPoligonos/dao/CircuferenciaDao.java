@@ -3,6 +3,7 @@ package br.senai.sp.calculadoraPoligonos.dao;
 import java.util.Scanner;
 
 import br.senai.sp.calculadoraPoligonos.model.Circunferencia;
+import br.senai.sp.calculadoraPoligonos.ui.Menu;
 
 public class CircuferenciaDao {
 	
@@ -18,6 +19,9 @@ public class CircuferenciaDao {
 		
 		circunferencia1.exibirDados();
 		
-		
+
+		Menu.retornar();
+
+	
 	}
 }

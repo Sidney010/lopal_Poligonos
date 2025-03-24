@@ -14,8 +14,33 @@ public class Poligonos{
 
 	public static void main(String[] args) {
 		
-		Menu.criarMenu();
-		System.out.println("Programa finalizado!");
+		//Looping / laços de repetição
+//		int contador = 1;
+//		while(contador <= 15){
+//			System.out.println("Sidney Aragão - " + contador);
+//			contador = contador + 1;
+//		}
+//		String resposta = "s";
+//		while (resposta.equals("s")) {
+//			System.out.println("Estamos dando voltas");
+//			System.out.print("Gostaria de dar uma volta (s/n)?");
+//			Scanner leitor = new Scanner(System.in);
+//			resposta = leitor.next();
+//		}
+		int resultado;
+		int contador = 0;
+		System.out.println("____________Tabuada do 9___________");
+		while(contador < 11){
+			resultado = contador*9;
+			System.out.println(contador + " x 9 = " + resultado);
+			contador = contador + 1;
+			
+		}
+		System.out.println("___________________________________");
+		//Menu.criarMenu();
+	
+	
+		
 		
 	}
 

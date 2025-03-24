@@ -3,6 +3,7 @@ package br.senai.sp.calculadoraPoligonos.dao;
 import java.util.Scanner;
 
 import br.senai.sp.calculadoraPoligonos.model.Quadrado;
+import br.senai.sp.calculadoraPoligonos.ui.Menu;
 
 public class QuadradoDao {
 	
@@ -19,7 +20,8 @@ public class QuadradoDao {
 		
 		quadrado.exibirDados();
 		
-		
+		Menu.retornar();
+
 	}
 
 }
